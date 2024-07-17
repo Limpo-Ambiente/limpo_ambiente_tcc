@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/icon.png">
+    <script src="https://kit.fontawesome.com/6bda94a8de.js" crossorigin="anonymous"></script>
+    <title>Limpo Ambiente</title>
+</head>
+
+<body>
+    <header>
+        <!--order 1-->
+        <div class="logos">
+            <img class="logoBgWhite" src="img/logo.png" alt="">
+            <img class="logoBgBlack" src="img/logo2.png" alt="">
+        </div>
+
+        <!--order 2-->
+        <nav id="menu">
+            <ul id="imenu-list" class="menu-list">
+                <li><a href="/pag_ind/lixo_verde.html">Sobre nós</a></li>
+                <li><a href="/curiosidades/curiosidades.html">Curiosidades</a></li>
+                <li><a href="#">Campanhas</a></li>
+            </ul>
+            <script>
+
+                var menuButton = document.getElementById("menu-btn");
+                var menu = document.getElementById("menu");
+
+                menu.style.transition("2s");
+
+                function showmenu() {
+                    if (menu.style.display === "none") {
+                        menu.style.display = "block";
+                    } else {
+                        menu.style.display = "none";
+                    }
+                };
+
+            </script>
+        </nav>
+
+        <!--order 3-->
+        <div class="dark_btn">
+            <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+            <label for="toggle" class="toggle-label" id="change">
+                <i id="sun" class="fa-solid fa-cloud-sun"></i>
+                <i id="moon" class="fa-solid fa-moon"></i>
+            </label>
+
+            <script>
+                const toggleBtn = document.getElementById('toggle');
+                const body = document.body;
+
+                toggleBtn.addEventListener('click', function () {
+                    body.classList.toggle('dark')
+                });
+            </script>
+        </div>
+
+        <!--order 4-->
+        <button onclick="showmenu()" id="menu-btn"><i class="fa-solid fa-water"></i></button>
+    </header>
+
+
+
+    <footer>
+        <img src="/pag_ind/fotos/logo_black_and_white.png" alt="" height="120px">
+        <hr>
+        <div class="tudo">
+            <div class="voltar">
+                <h3>Volte para:</h3>
+                <a href="">Home</a>
+            </div>
+
+            <div class="referencias">
+                <h3>Referências da Página:</h3>
+                <a href="/pag_kim/lixo_eletronico.html">pag Kim</a>
+                <a href="/pag_gi/lixo_reciclavel.html">pag Gi</a>
+                <a href="/pag_laiz/lixo_domiciliar.html">Pag Laiz</a>
+                <a href="/pag_ind/lixo_verde.html">Pag Den</a>    
+            </div>
+
+            <div class="links_rapidos">
+                <h3>Links Rápidos</h3>
+                <a href="#">Siga nosso linktree</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Curiosidades</a>
+                <a href="#">Campanhas</a>
+            </div>
+
+            <form action="" method="post">
+                <h3>Fale Conosco</h3>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="feed" id="feedback" required placeholder="Deixe seu feedback!">
+                <input type="submit" id="enviar" value="Enviar"> 
+            </form>
+        </div>
+
+        <p>&copy;2024 Desenvolvido por Limpo Ambiente</p>
+    </footer>
+</body>
+
+</html>
